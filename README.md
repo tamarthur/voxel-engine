@@ -34,6 +34,8 @@ Old screenshots from development, taken at different stages of the project.
 | A 3D noise test in one chunk area | Textured blocks with fog |
 | ![Creatures with the hotbar and armor slots UI](screenshots/creatures-hotbar.jpg) | ![Boat on water](screenshots/boat-water.jpg) |
 | Creatures, with the hotbar and armor slots UI | A boat on water |
+| ![Early version with plains, snow and desert biomes](screenshots/early-biomes.jpg) | |
+| An early, simpler version: plains, snow and desert biomes with caves | |
 
 ## Versions
 
