@@ -2,6 +2,8 @@
 
 **Built:** 2022 – 2023
 
+> Written in Roblox Studio between 2022 and 2023. Roblox saves projects as binary place files, so in 2026 I used Claude to extract the scripts into plain `.lua` files for GitHub. The code itself is unchanged.
+
 A Minecraft-style voxel world engine for Roblox, built in four iterations. It generates an infinite, chunked block world on the server, streams chunks to clients, and renders them efficiently on the client.
 
 ## Highlights
