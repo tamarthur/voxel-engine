@@ -32,6 +32,8 @@ Old screenshots from development, taken at different stages of the project.
 | Mountains from layered noise | Looking out of a cave in the snow biome |
 | ![3D noise test](screenshots/3d-noise.jpg) | ![Textured blocks with fog](screenshots/textured-blocks.jpg) |
 | A 3D noise test in one chunk area | Textured blocks with fog |
+| ![Creatures with the hotbar and armor slots UI](screenshots/creatures-hotbar.jpg) | ![Boat on water](screenshots/boat-water.jpg) |
+| Creatures, with the hotbar and armor slots UI | A boat on water |
 
 ## Versions
 
