@@ -34,8 +34,6 @@ Old screenshots from development, taken at different stages of the project.
 | A 3D noise test in one chunk area | Textured blocks with fog |
 | ![Creatures with the hotbar and armor slots UI](screenshots/creatures-hotbar.jpg) | ![Boat on water](screenshots/boat-water.jpg) |
 | Creatures, with the hotbar and armor slots UI | A boat on water |
-| ![Early version with plains, snow and desert biomes](screenshots/early-biomes.jpg) | |
-| An early, simpler version: plains, snow and desert biomes with caves | |
 
 ## Versions
 
@@ -53,8 +51,12 @@ Standalone prototypes in `terrain/` where I worked out the world generation and 
 | Folder | What it explores |
 |---|---|
 | `terrain/gen2` | First heightmap test: noise-based terrain built from blocks around the player. |
-| `terrain/gen3` | Layered noise maps (surface, continentalness, erosion, temperature) blended with interpolation, 3D noise caves with flood-fill edge detection, chunk generation on a parallel Actor, and two maximal-rectangle tests (`testRect`, `testRect2`) for merging blocks. |
+| `terrain/gen3` | Layered noise maps (surface, continentalness, erosion) blended with interpolation, a temperature noise map that picks the biome (snow, plains, desert), 3D noise caves with flood-fill edge detection, chunk generation on a parallel Actor, and two maximal-rectangle tests (`testRect`, `testRect2`) for merging blocks. |
 | `terrain/gen4` | Biomes (plains, desert, tundra) picked by nearest biome point, separate terrain, biome and structure generators, mining, and a dynamic-programming maximal-rectangle algorithm (`rectangle2`) for merging blocks into fewer parts. |
+
+![terrain/gen3: snow, plains and desert biomes picked by temperature noise, with caves](screenshots/early-biomes.jpg)
+
+*`terrain/gen3`: snow, plains and desert biomes picked by a temperature noise map, with caves.*
 
 ## Layout
 
