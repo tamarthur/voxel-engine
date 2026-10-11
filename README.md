@@ -2,7 +2,7 @@
 
 **Built:** 2022 – 2023
 
-> Written in Roblox Studio between 2022 and 2023. Roblox saves projects as binary place files, so in 2026 I used Claude to extract the scripts into plain `.lua` files for GitHub. The code itself is unchanged.
+> Written in Roblox Studio between 2022 and 2023. Roblox saves projects as binary place files, so in 2026 I used Claude to extract the scripts into plain `.lua` files for GitHub. The code itself is unchanged, apart from deleting a few commented-out debug prints.
 
 A Minecraft-style voxel world engine for Roblox, built in four iterations. It generates an infinite, chunked block world on the server, streams chunks to clients, and renders them efficiently on the client.
 
@@ -24,6 +24,16 @@ A Minecraft-style voxel world engine for Roblox, built in four iterations. It ge
 | `v2` | Faster world generation, breadth-first chunk loading, and a first move to worker threads. |
 | `v3` | Main version: rebuilt renderer with greedy meshing, 16 parallel Actors, spline-shaped terrain, sparse tensor storage, build and break tools. |
 | `v4` | Early strict-typed rewrite of the chunk and generation core. |
+
+## Terrain generator experiments
+
+Standalone prototypes in `terrain/` where I worked out the world generation and meshing ideas used in the engine.
+
+| Folder | What it explores |
+|---|---|
+| `terrain/gen2` | First heightmap test: noise-based terrain built from blocks around the player. |
+| `terrain/gen3` | Layered noise maps (surface, continentalness, erosion, temperature) blended with interpolation, 3D noise caves with flood-fill edge detection, chunk generation on a parallel Actor, and two maximal-rectangle tests (`testRect`, `testRect2`) for merging blocks. |
+| `terrain/gen4` | Biomes (plains, desert, tundra) picked by nearest biome point, separate terrain, biome and structure generators, mining, and a dynamic-programming maximal-rectangle algorithm (`rectangle2`) for merging blocks into fewer parts. |
 
 ## Layout
 
