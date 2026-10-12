@@ -22,6 +22,10 @@ A Minecraft-style voxel world engine for Roblox, built in four iterations. It ge
 
 Old screenshots from development, taken at different stages of the project.
 
+![Looking up at a canyon wall with layered rock and ore blocks](screenshots/ore-canyon.jpg)
+
+*Looking up a canyon wall: layered rock, dirt and grass, with ore blocks (yellow) scattered through the stone.*
+
 | | |
 |---|---|
 | ![Chunk boundaries drawn as wireframes over generated terrain](screenshots/chunk-boundaries.jpg) | ![Cave arch carved through a hill](screenshots/cave-arch.jpg) |
